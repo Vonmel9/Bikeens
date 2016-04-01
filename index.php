@@ -290,7 +290,7 @@
     </div>
   </footer>
 
-  <div id="sign" class="show-ele">
+  <div id="sign" class="hide-ele">
     <div class="window">
       <div class="close-sign">
         <button id="close"><span class="fa fa-times fa-2x"></span></button>
@@ -298,7 +298,7 @@
       <div id="sign-in">
         <form id="signin-form" action="php/signin.php" method="post">
           <div class="login">
-            <input type="text" name="email" value="" placeholder=" Votre adresse email">
+            <input type="text" name="pseudo" value="" placeholder=" Votre pseudo">
             <input type="password" name="password" value="" placeholder=" Votre mot de passe">
           </div>
           <div class="option-sign">
@@ -326,13 +326,12 @@
       </div>
     </div>
   </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+  <script src="js/function.js"></script>
+  <script src="js/sign.js"></script>
+  <script type="text/javascript">
 
+  </script>
 </body>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
-<script src="js/function.js"></script>
-<script src="js/sign.js"></script>
-<script type="text/javascript">
-
-</script>
 </html>

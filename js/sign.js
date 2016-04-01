@@ -108,7 +108,7 @@ function modalSignUp()
           'Le mot de passe ne correspond pas aux critères.'+
           '<br>8 caractères avec au minimum 1 lettre et 1 chiffre.'+
           '</p>'+
-          '<input type="password" id="password2" name="confirmation-password" value="" placeholder=" Confirmer votre mot de passe">'+
+          '<input type="password" id="password2" name="password2" value="" placeholder=" Confirmer votre mot de passe">'+
           '<p class="password2-error">'+
           'Les 2 mot de passes ne sont pas identiques.'+
           '</p>'+
@@ -318,13 +318,16 @@ $('#sign').on('submit', '#sign-up', function(e)
   {
     if(data.search('Erreur') == -1)
     {
-      alert("Success");
+      $("#sign .sign-error").removeClass("error");
+      document.location.reload();
     }
-    else alert("Erreur");
+    else {
+          $("#sign .sign-error").addClass("error");
+         }
   })
   .fail(function()
   {
-    alert("Fail");
+    $("#sign .sign-error").addClass("error");
   });
 });
 
@@ -337,12 +340,14 @@ $('#sign').on('submit', '#sign-in', function(e)
   $.post($form.attr("action"), $form.serialize())
   .done(function(data)
   {
-
     if(data.search('Erreur') == -1)
     {
-      alert("Success");
+      $("#sign .sign-error").removeClass("error");
+      document.location.reload();
     }
-    else alert("Error");
+    else {
+          $("#sign .sign-error").addClass("error");
+         }
   })
   .fail(function()
   {
