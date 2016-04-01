@@ -21,14 +21,70 @@ body {
   background-color: #fff;
   width: 100%;
   font-size: 62.5%;
+  color: #fff;
+  font-family: Arial;
 }
 
 .container {
   width: 80%;
   margin: auto;
-  background-color: red; /* a changer */
+  /*background-color: red; /* a changer */
 }
 
 /* ==========================================================================
    END ALL
+   ========================================================================== */
+
+
+
+/* ==========================================================================
+   PAGE VELO
+   ========================================================================== */
+
+#photopdt {
+  width: 60%;
+  background-color: blue;
+}
+
+/* ==========================================================================
+   END PAGE VELO
+   ========================================================================== */
+
+
+
+/* ==========================================================================
+   FOOTER
+   ========================================================================== */
+footer {
+  background-color: #393939;
+  height: 200px;
+  font-size: 1.1em;
+}
+footer .container {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 5em;
+}
+.plan h6 {
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-bottom: 1em;
+}
+.plan ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+.plan ul li a:hover {
+  text-decoration: underline;
+}
+.rsxScx {
+  display: flex;
+  flex-direction: row;
+}
+.fa-facebook, .fa-twitter, .fa-instagram {
+  margin-right: 1em;
+}
+
+/* ==========================================================================
+   END FOOTER
    ========================================================================== */
