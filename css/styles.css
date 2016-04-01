@@ -192,10 +192,14 @@ body {
 
 #resumBikes {
   display : flex;
+  flex-direction: row;
+
 }
 
-#resumBikes .container {
-  margin-right: 100px;
+#resumBikes2 {
+  display : flex;
+  flex-direction: row;
+  height: 500px;
 }
 
 .bike-contain {
@@ -287,6 +291,23 @@ body {
   float: right;
   margin-right: 22px;
   margin-top: 63px;
+  border: none;
+  border-radius: 10px;
+  background-color: #eabf07;
+  cursor: pointer;
+  font-size: 1.6em;
+}
+
+.fond-btn-voir-velo-proxi2 {
+  background-color: #fff;
+  height: 80px;
+}
+
+.btn-voir-velo-proxi2 {
+  width: 363px;
+  height: 43px;
+  float: right;
+  margin-right: 150px;
   border: none;
   border-radius: 10px;
   background-color: #eabf07;
@@ -561,6 +582,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  margin-top: 1px;
 }
 #biopdt h2 {
   font-size: 1.6em;
@@ -602,6 +624,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  margin-top: 1px;
 }
 #feedback h2 {
   font-size: 1.6em;
