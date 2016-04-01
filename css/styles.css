@@ -304,9 +304,6 @@ body {
   overflow: hidden;
   background-color: #02585d;
 }
-#principe a {
-  text-decoration: none;
-}
 
 .groupIcones {
   display: flex;
