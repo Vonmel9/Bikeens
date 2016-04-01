@@ -1,0 +1,15 @@
+font-family: Comfortaa Regular;
+font-size: 16px;
+largeur entre chaque lien : 36px;
+
+espace entre logo et premier lien : 110px;
+
+LOGO : espace haut : 17px;
+
+Bouton 'Connexion' : 
+	width: 148px;
+	height: 43px;
+	background-color: #0e9898;
+
+Champ recherche: 
+	background-color: #363636;

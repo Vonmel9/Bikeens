@@ -14,22 +14,25 @@
   <header>
     <div class="container">
       <nav id="menu">
-        <img id="logo" src="" alt="logo" />
-        <ul>
-          <li>Comment ça marche?</li>
-          <li>Inscription</li>
-          <li>Connexion</li>
-          <li id="louer">Louer votre vélo</li>
-          <li></li>
+        <div>
+          <img id="logo" src="img/logo.png" alt="logo" />
+        </div>
+      <div id="nav">
+        <ul id="navigation">
+          <li><a href="#">Comment ça marche?</a></li>
+          <li><a href="#">Inscription</a></li>
+          <li><a href="#">Connexion</a></li>
+          <li id="louer"><a href="#">Louer votre vélo</a></li>
         </ul>
+      </div>
       </nav>
     </div>
 
     <section id="slide">
-      <div class="container">
-        <h1></h1>
-        <p>
-
+      <div class="container-titre">
+        <h1 class="slide--titre">Vivez l’expérience</h1>
+        <p class="slide-sous-titre">
+          Louez un vélo à un particulier proche de vous
         </p>
       </div>
     </section>
@@ -38,14 +41,14 @@
       <div class="container">
 
         <form class="" action="index.html" method="post">
-          <input type="text" name="name" value="" placeholder="Où voulez-vous louer?">
+          <input class="champ-recherche" type="text" name="ouchercher" value="" placeholder="Où voulez-vous louer?">
           <select class="debut" name="">
             <option value="Début" selected>Début</option>
           </select>
           <select class="fin" name="">
             <option value="Fin" selected>Fin</option>
           </select>
-          <button type="submit" name="button">Rechercher</button>
+          <button class="btn-search" type="submit" name="button">Rechercher</button>
         </form>
 
       </div>
@@ -56,99 +59,158 @@
 
   <section id="resumBikes">
     <div class="container">
-      <p>
-
+      <p class="resumBikes-sous-titre">
+        Louez un vélo à un particulier proche de vous
       </p>
-      <h2></h2>
+      <h2 class="resumBikes-titre">Sortez moi du garage!</h2>
 
+      <div class="bike-contain mgt-bike">
+        <article class="bike-hover">
+          <img class="bike" src="img/img-location-velo/velo1.jpg" alt="" />
+          <div class="infos">
+            <p class="ville">Montpellier</p>
+            <p class="categorie">TANDEM VILLE</p>
+            <p class="tarif">14€ <span class="tsem">/ semaine</span></p>
+            <img class="img-profil" src="img/profil/profil1.png" alt="" />
+            <div class="etoiles-contain">
+              <img class="etoiles-infos" src="img/profil/etoiles.png" alt="" />
+              <img class="etoiles-infos" src="img/profil/etoiles.png" alt="" />
+              <img class="etoiles-infos" src="img/profil/etoiles.png" alt="" />
+            </div>
+          </div>
+        </article>
+
+        <article class="bike-hover">
+          <img class="bike" src="img/img-location-velo/velo2.jpg" alt="" />
+          <div class="infos">
+            <p class="ville">Montpellier</p>
+            <p class="categorie">Vélo du marié</p>
+            <p class="tarif">25€ <span class="tsem">/ semaine</span></p>
+            <img class="img-profil" src="img/profil/profil2.png" alt="" />
+            <div class="etoiles-contain">
+              <img class="etoiles-infos" src="img/profil/etoiles.png" alt="" />
+              <img class="etoiles-infos" src="img/profil/etoiles.png" alt="" />
+            </div>
+          </div>
+        </article>
+
+        <article>
+          <img class="bike" src="img/img-location-velo/velo3.jpg" alt="" />
+          <div class="infos">
+            <p class="ville">Montpellier</p>
+            <p class="categorie">vélo bois</p>
+            <p class="tarif">32€ <span class="tsem">/ semaine</span></p>
+            <img class="img-profil" src="img/profil/profil3.png" alt="" />
+            <div class="etoiles-contain">
+              <img class="etoiles-infos" src="img/profil/etoiles.png" alt="" />
+              <img class="etoiles-infos" src="img/profil/etoiles.png" alt="" />
+              <img class="etoiles-infos" src="img/profil/etoiles.png" alt="" />
+            </div>
+          </div>
+        </article>
+      </div>
+    <div class="bike-contain">
       <article>
-        <img class="bike" src="" alt="" />
+        <img class="bike" src="img/img-location-velo/velo4.jpg" alt="" />
         <div class="infos">
-
+          <p class="ville">Montpellier</p>
+          <p class="categorie">V&Egrave;LO DE VILLE FEMME PEUGEOT</p>
+          <p class="tarif">14€ <span class="tsem">/ semaine</span></p>
+          <img class="img-profil" src="img/profil/profil4.png" alt="" />
+          <div class="etoiles-contain">
+            <img class="etoiles-infos" src="img/profil/etoiles.png" alt="" />
+            <img class="etoiles-infos" src="img/profil/etoiles.png" alt="" />
+            <img class="etoiles-infos" src="img/profil/etoiles.png" alt="" />
+          </div>
         </div>
       </article>
 
       <article>
-        <img class="bike" src="" alt="" />
+        <img class="bike" src="img/img-location-velo/velo5.jpg" alt="" />
         <div class="infos">
-
+          <p class="ville">Montpellier</p>
+          <p class="categorie">fixies  mixte purfix</p>
+          <p class="tarif">32€ <span class="tsem">/ semaine</span></p>
+          <img class="img-profil" src="img/profil/profil5.png" alt="" />
+          <div class="etoiles-contain">
+            <img class="etoiles-infos" src="img/profil/etoiles.png" alt="" />
+            <img class="etoiles-infos" src="img/profil/etoiles.png" alt="" />
+            <img class="etoiles-infos" src="img/profil/etoiles.png" alt="" />
+          </div>
         </div>
       </article>
 
       <article>
-        <img class="bike" src="" alt="" />
+        <img class="bike" src="img/img-location-velo/velo6.jpg" alt="" />
         <div class="infos">
-
+          <p class="ville">Montpellier</p>
+          <p class="categorie">Vélo de course homme rapido</p>
+          <p class="tarif">25€ <span class="tsem">/ semaine</span></p>
+          <img class="img-profil" src="img/profil/profil6.png" alt="" />
+          <div class="etoiles-contain">
+            <img class="etoiles-infos" src="img/profil/etoiles.png" alt="" />
+            <img class="etoiles-infos" src="img/profil/etoiles.png" alt="" />
+          </div>
         </div>
       </article>
-
-      <article>
-        <img class="bike" src="" alt="" />
-        <div class="infos">
-
-        </div>
-      </article>
-
-      <article>
-        <img class="bike" src="" alt="" />
-        <div class="infos">
-
-        </div>
-      </article>
-
-      <article>
-        <img class="bike" src="" alt="" />
-        <div class="infos">
-
-        </div>
-      </article>
-      <button type="button" name="button">Voir d'autres vélos à proximité</button>
+    </div>
+      <button class="btn-voir-velo-proxi" type="button" name="button">Voir d'autres vélos à proximité</button>
 
     </div>
   </section>
 
   <section id="principe">
     <div class="container">
-      <h2></h2>
-      <p>
-
+      <h2 class="titre-ccm">Comment çà marche?</h2>
+      <p class="para-ccm">
+        Bikeens est le premier service de location de vélos entre particuliers en France, 100% assurés par XXX.
+        Ensemble échangeons nos expériences et participons au développement du vélo,
+        un mode de déplacement écologique idéal pour explorer le monde!
       </p>
 
-      <article class="icones">
-        <img src="" alt="" />
-        <p>
+      <ul class="icones">
+        <li class="icones-ccm">
+          <img src="img/ccm/utilise-pas-velo.png" alt="" />
+          <p class="info-icon-ccm">
+            Je n’utilise pas mon vélo
+          </p>
+        </li>
+      </ul>
 
-        </p>
-      </article>
+      <ul class="icones">
+        <li class="icones-ccm">
+          <img src="img/ccm/jai-une-idee.png" alt="" />
+          <p class="info-icon-ccm">
+            J’ai une idée
+          </p>
+        </li>
+      </ul>
 
-      <article class="icones">
-        <img src="" alt="" />
-        <p>
+      <ul class="icones">
+        <li class="icones-ccm">
+          <img src="img/ccm/je-le-repare.png" alt="" />
+          <p class="info-icon-ccm">
+            Je le répare
+          </p>
+        </li>
+      </ul>
 
-        </p>
-      </article>
+      <ul class="icones">
+        <li class="icones-ccm">
+          <img src="img/ccm/je-loue-je-partage.png" alt="" />
+          <p class="info-icon-ccm">
+            Je loue / je partage
+          </p>
+        </li>
+      </ul>
 
-      <article class="icones">
-        <img src="" alt="" />
-        <p>
-
-        </p>
-      </article>
-
-      <article class="icones">
-        <img src="" alt="" />
-        <p>
-
-        </p>
-      </article>
-
-      <button type="button" name="button">S'inscrire</button>
+      <button class="ccm-inscription" type="button" name="button">S'inscrire</button>
     </div>
   </section>
 
   <section id="blog">
     <div class="container">
-
+        <h2 class="titre-blog">Le blog</h2>
       <article>
         <div class="left">
           <img src="" alt="" />

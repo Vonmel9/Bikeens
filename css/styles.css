@@ -1,34 +1,360 @@
-/* ==========================================================================
-   PALETTE COULEURS --
+/*
+  ==========================================================================
+  PALETTE COULEURS --
+  blanc : #FFF
+  bleu(logo+text) : #009E99
+  jaune :#F2C100
+  gris : #393939
+  saumon : #FF8872
+  vert : #BAC54B
+  bleu(commentçamarche) : #005C5E
+  ==========================================================================
+*/
 
-   blanc : #FFF
-   bleu(logo+text) : #009E99
-   jaune :#F2C100
-   gris : #393939
-   saumon : #FF8872
-   vert : #BAC54B
-   bleu(commentçamarche) : #005C5E
+/*
+  ==========================================================================
+  ALL
+  ==========================================================================
+*/
 
-   ========================================================================== */
+body,
+html {
+  width   : 100%;
+  height  : 100%;
+  margin  : 0;
+  padding : 0;
+}
 
+htm {
+  box-sizing : border-box;
+}
 
-
-/* ==========================================================================
-   ALL
-   ========================================================================== */
+*,
+*::after,
+*::before {
+  box-sizing : inherit;
+}
 
 body {
-  background-color: #fff;
-  width: 100%;
-  font-size: 62.5%;
+  width            : 100%;
+  background-color : #fff;
+  font-size        : 62.5%;
 }
 
 .container {
-  width: 80%;
-  margin: auto;
-  background-color: red; /* a changer */
+  width  : 80%;
+  margin : auto;
+    /* background-color : red; */
+    /* a changer */
 }
 
-/* ==========================================================================
-   END ALL
-   ========================================================================== */
+/*
+  ==========================================================================
+  HOME PAGE
+  ==========================================================================
+*/
+
+#menu {
+  display          : flex;
+  width            : auto;
+  height           : 101px;
+  background-color : rgb(255, 255, 255);
+  justify-content  : space-between;
+}
+
+#logo {
+  margin-top     : 10px;
+  vertical-align : middle;
+}
+
+#navigation {
+  display         : flex;
+  width           : 100%;
+  vertical-align  : middle;
+  justify-content : space-between;
+    /* margin-left : 106px; */
+}
+
+#navigation li {
+  font-family : 'Comfortaa Regular';
+  font-size   : 16px;
+}
+
+#navigation a {
+  color           : #000;
+  text-decoration : none;
+}
+
+#nav {
+  width      : 50%;
+  margin-top : 40px;
+}
+
+#louer {
+  height           : 43px;
+  margin-top       : -10px;
+  padding          : 0 10px 0 10px;
+  color            : #fff;
+  border-radius    : 8px;
+  background-color : #0e9898;
+  line-height      : 43px;
+}
+
+/*
+  ==========================================================================
+  Slide
+  ==========================================================================
+*/
+
+/* * L'ID Slide représente le bloc container du slide (l'image avec le vélo). */
+
+#slide {
+  width           : 100%;
+  height          : 429px;
+  overflow        : hidden;
+  background      : url(../img/navigation/bg-header.jpg) no-repeat center;
+  background-size : cover;
+}
+
+/* * La classe slide--titre représente le titre h2 du slide, "Vivez l'expérience" */
+
+.slide--titre {
+  font-size : 6em;
+}
+
+/* * la classe sous-titre représente le paragraphe sous le titre du slide */
+
+.slide-sous-titre {
+  font-size : 3.6em;
+}
+
+.slide-sous-titre,
+.slide--titre {
+  text-align : center;
+}
+
+/*
+  * container-titre représente la classe qui englobe le titre et le sous-titre
+  du slide avec le * background noir transparent.
+*/
+
+.container-titre {
+  width            : 45%;
+  margin           : 122px auto;
+  color            : #fff;
+  background-color : rgba(0, 0, 0, 0.6);
+}
+
+#search {
+  height           : 100px;
+  background-color : #363636;
+}
+
+.champ-recherche,
+.debut,
+.fin {
+  width            : 263px;
+  height           : 40px;
+  margin-top       : 30px;
+  margin-left      : 27px;
+  color            : white;
+  border           : 2px solid white;
+  border-radius    : 5px;
+  background-color : #363636;
+}
+
+.btn-search {
+  width            : 263px;
+  height           : 40px;
+  margin-left      : 27px;
+  color            : #000;
+  border           : none;
+  border-radius    : 10px;
+  background-color : #eabf07;
+}
+
+/*
+  ==========================================================================
+  Bloc de location de vélo
+  ==========================================================================
+*/
+
+#resumBikes {
+  display : flex;
+}
+
+.bike-contain {
+  display         : flex;
+  position        : relative;
+  margin-top      : 30px;
+  justify-content : space-around;
+}
+
+.bike {
+  width : 360px;
+}
+
+.bike-hover:hover {
+  cursor: pointer;
+}
+
+.resumBikes-sous-titre {
+  margin-top : 70px;
+  text-align : center;
+  font-size  : 2.4em;
+}
+
+.resumBikes-titre {
+  margin-top : 17px;
+  color      : #0e9898;
+  text-align : center;
+  font-size  : 3.6em;
+}
+
+.mgt-bike {
+  margin-top : 60px;
+}
+
+.infos {
+  height: 100px;
+  padding: 1px 0;
+  position: relative;
+  background-color: #f0eee3;
+}
+
+.ville {
+  font-size: 1.4em;
+}
+
+.categorie {
+  font-size: 1.8em;
+}
+
+.tarif {
+  font-size: 1.8em;
+}
+
+.tsem {
+  font-size: .8em;
+}
+
+.ville, .categorie, .tarif {
+  margin-left: 27px;
+  margin-top: 10px;
+}
+
+.etoiles-contain {
+  width: 72px;
+  height: 16px;
+  float: right;
+  margin-top: -15px;
+  margin-right: 30px;
+  /*background-color: rgb(1, 195, 160);*/
+}
+
+.etoiles-infos {
+  margin-left: 5px;
+  display: inline-block;
+}
+
+.img-profil {
+  position: absolute;
+  bottom: 80%;
+  right: 10%;
+}
+
+.btn-voir-velo-proxi {
+  width: 363px;
+  height: 43px;
+  float: right;
+  margin-right: 22px;
+  margin-top: 63px;
+  border: none;
+  border-radius: 10px;
+  background-color: #eabf07;
+  font-size: 1.6em;
+}
+
+/*
+  ==========================================================================
+  Styles CSS du bloc Principe, 'comment ça marche ?'
+  ==========================================================================
+*/
+
+#principe {
+  width: auto;
+  height: 690px;
+  margin-top: 74px;
+  overflow: hidden;
+  background-color: #02585d;
+}
+
+.icones {
+  display: inline-block;
+  margin-left: 132px;
+  margin-top: 55px;
+}
+
+.titre-ccm {
+  font-size: 3.6em;
+  text-align: center;
+  margin-top: 82px;
+  margin-bottom: 48px;
+  color: #fff;
+}
+
+.para-ccm {
+  width: 903px;
+  margin: auto;
+  font-size: 1.8em;
+  text-align: center;
+  line-height: 30px;
+  color: #fff;
+}
+
+.icones-ccm {
+  float left;
+}
+
+.info-icon-ccm {
+  font-size: 1.8em;
+  color: #eabf07;
+  margin-top: 16px;
+}
+
+.icones-ccm, .info-icon-ccm {
+  text-align: center;
+}
+
+.ccm-inscription {
+  width: 205px;
+  height: 43px;
+  display: block;
+  margin: 73px auto;
+  border: none;
+  border-radius: 10px;
+  background-color: #eabf07;
+}
+
+/*
+  ==========================================================================
+  BLOG
+  ==========================================================================
+*/
+
+#blog {
+  height: 833px;
+  background-color: rgb(14, 75, 119);
+}
+
+.titre-blog {
+  font-size: 3.6em;
+  margin-top: 74px;
+  text-align: center;
+}
+
+/*
+  ==========================================================================
+  END ALL
+  ==========================================================================
+*/
