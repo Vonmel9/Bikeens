@@ -1,0 +1,4 @@
+width: 363px;
+height: 43px;
+background-color: #eabf07;
+text : noir, centrer

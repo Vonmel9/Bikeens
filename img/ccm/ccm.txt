@@ -1,0 +1,9 @@
+bloc : background-color: #02585d;
+
+Titre :
+	font-family: Comfortaa Regular;
+	font-size: 36px;
+
+paragraphe :
+	font-family: Comfortaa Regular;
+	font-size: 18px;

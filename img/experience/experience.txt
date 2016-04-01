@@ -1,0 +1,7 @@
+bloc : 
+	background-color: #363636;
+
+Titre : 
+	font-family: Comfortaa Regular;
+	font-size: 30px;
+	color: #0e9898;
