@@ -169,6 +169,61 @@ body {
 
 /* fin biopdt */
 
+
+
+/* feedback */
+
+#feedback {
+  width: 60%;
+  height: 500px;
+  background-color: #393939;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+#feedback h2 {
+  font-size: 1.6em;
+  margin-left: 10px;
+  line-height: 2em;
+  font-weight: bold;
+}
+.imgText {
+  display: flex;
+  flex-direction: row;
+}
+.imgAvis {
+  margin-right: 20px;
+  margin-left: 15px;
+}
+.avis p {
+  font-size: 1.3em;
+  margin-top: 15px;
+}
+.nomDate {
+  display: flex;
+  flex-direction: row;
+  float: right;
+}
+.nomDate p {
+  margin-top: 0;
+  margin-right: 15px;
+  line-height: 2.4em;
+}
+.saumon {
+  color: #FF8872;
+}
+.vert {
+  color: #BAC54B;
+}
+.bleu {
+  color: #008983;
+}
+.nomDate .note {
+  margin-right: 20px;
+}
+
+/* fin feedback */
+
 /* ==========================================================================
    END PAGE VELO
    ========================================================================== */
