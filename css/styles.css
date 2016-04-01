@@ -266,3 +266,219 @@ footer .container {
 /* ==========================================================================
    END FOOTER
    ========================================================================== */
+
+
+
+/* ==========================================================================
+  MODAL SIGN
+  ========================================================================== */
+
+.show-ele {
+ display: block;
+}
+
+.hide-ele {
+ display: none;
+}
+
+/* MODAL */
+
+#sign {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background-color: rgba(18, 18, 11, 0.5);
+  z-index: 2;
+
+  text-align: center;
+}
+
+#sign .close-sign {
+  width: 90%;
+  margin: auto;
+  text-align: right;
+}
+
+#sign .close-sign button {
+  border: none;
+  margin-top: 10px;
+  background-color: transparent;
+}
+
+#sign .close-sign span {
+  display: inline-block;
+  color: #393939;
+}
+
+#sign .window {
+  position: relative;
+  width: 40%;
+  height: auto;
+  margin: auto;
+  margin-top: 100px;
+  background-color: white;
+  z-index: 2;
+
+  text-align: center;
+  border-radius: 5px;
+}
+
+/* SIGN-IN PART */
+
+#sign-in .login, #sign-in .option-sign {
+  width: 90%;
+  margin: auto;
+}
+
+#sign-in .login input {
+  display: inline-block;
+  width: 100%;
+  height: 40px;
+  margin: auto;
+  margin-bottom: 10px;
+}
+
+#sign-in .login input:nth-child(1) {
+    margin-top: 20px;
+}
+
+/* OPTION SIGN-IN */
+
+.text-left {
+  text-align: left;
+}
+
+.text-right{
+  text-align: right;
+}
+
+#sign-in .option-sign {
+}
+
+#sign-in .option-sign .text-left, #sign-in .option-sign .text-right {
+  width: 49%;
+  display: inline-block;
+  height: 30px;
+}
+
+#sign-in .option-sign label {
+  height: auto;
+  display: inline-block;
+}
+
+#sign-in .option-sign input {
+  width: auto;
+  height: auto;
+  display: inline-block;
+}
+
+#sign-in .option-sign a {
+  color: red;
+  display: inline-block;
+}
+
+/* SUBMIT */
+
+
+#sign-in button {
+  display: inline-block;
+  width: 90%;
+  height: 40px;
+  margin: auto;
+  margin-bottom: 10px;
+
+  color: white;
+  background-color: #009E99;
+}
+
+#sign hr {
+  width: 90%;
+  border: 1px solid #393939;
+}
+
+/* SIGN UP INFO */
+
+#sign-up-info {
+  width: 90%;
+  margin: auto;
+  margin-bottom: 10px;
+  min-height: 60px;
+}
+
+#sign-up-info .text-left, #sign-up-info .text-right {
+  width: 49%;
+  display: inline-block;
+  height: 30px;
+}
+
+#sign-up-info button {
+  display: inline-block;
+  width: 90%;
+  height: 40px;
+  margin: auto;
+  margin-bottom: 30px;
+
+  color: white;
+  background-color: #009E99;
+}
+
+/* SIGN UP PART */
+
+#sign-up #signup-form {
+  width: 90%;
+  margin: auto;
+}
+
+#sign-up input {
+  display: inline-block;
+  width: 100%;
+  height: 40px;
+  margin: auto;
+  margin-bottom: 10px;
+}
+
+#sign-up input:nth-child(1) {
+    margin-top: 20px;
+}
+
+#sign-up button {
+  width: 100%;
+  height: 40px;
+  margin: auto;
+  margin-bottom: 10px;
+
+  color: white;
+  background-color: #009E99;
+}
+
+/* SIGN IN INFO */
+
+#sign-in-info {
+  width: 90%;
+  margin: auto;
+  margin-bottom: 10px;
+  min-height: 60px;
+}
+
+#sign-in-info .text-left, #sign-in-info .text-right {
+  width: 49%;
+  display: inline-block;
+  height: 30px;
+}
+
+#sign-in-info button {
+  display: inline-block;
+  width: 90%;
+  height: 40px;
+  margin: auto;
+  margin-bottom: 30px;
+
+  color: white;
+  background-color: #009E99;
+}
+
+/* ==========================================================================
+  END MODAL SIGN
+  ========================================================================== */
