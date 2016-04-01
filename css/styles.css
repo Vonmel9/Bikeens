@@ -36,9 +36,17 @@ html {
 }
 
 body {
+<<<<<<< HEAD
   min-width            : 100%;
   background-color : #fff;
   font-size        : 62.5%;
+=======
+  background-color: #fff;
+  width: 100%;
+  font-size: 62.5%;
+  color: #fff;
+  font-family: Arial;
+>>>>>>> master
 }
 
 .container {
@@ -46,6 +54,11 @@ body {
   margin : auto;
     /* background-color : red; */
     /* a changer */
+}
+
+.main {
+  width: 80%;
+  margin: auto;
 }
 
 /*
@@ -121,13 +134,13 @@ body {
 /* * La classe slide--titre représente le titre h2 du slide, "Vivez l'expérience" */
 
 .slide--titre {
-  font-size : 6em;
+  font-size : 5em;
 }
 
 /* * la classe sous-titre représente le paragraphe sous le titre du slide */
 
 .slide-sous-titre {
-  font-size : 3.6em;
+  font-size : 3em;
 }
 
 .slide-sous-titre,
@@ -141,10 +154,12 @@ body {
 */
 
 .container-titre {
-  width            : 45%;
-  margin           : 122px auto;
+  width            : 70%;
+  margin           : 110px auto;
   color            : #fff;
   background-color : rgba(0, 0, 0, 0.6);
+  padding-top: 60px;
+  padding-bottom: 70px;
 }
 
 #search {
@@ -155,7 +170,7 @@ body {
 .champ-recherche,
 .debut,
 .fin {
-  width            : 263px;
+  width            : 21%;
   height           : 40px;
   margin-top       : 30px;
   margin-left      : 27px;
@@ -186,6 +201,10 @@ body {
   display : flex;
 }
 
+#resumBikes .container {
+  margin-right: 100px;
+}
+
 .bike-contain {
   display         : flex;
   position        : relative;
@@ -194,7 +213,7 @@ body {
 }
 
 .bike {
-  width : 360px;
+  width : 90%;
 }
 
 .bike-hover:hover {
@@ -202,16 +221,17 @@ body {
 }
 
 .resumBikes-sous-titre {
-  margin-top : 70px;
+  margin-top : 17px;
   text-align : center;
-  font-size  : 2.4em;
+  font-size  : 2em;
+  color: #393939;
 }
 
 .resumBikes-titre {
-  margin-top : 17px;
+  margin-top : 70px;
   color      : #0e9898;
   text-align : center;
-  font-size  : 3.6em;
+  font-size  : 3em;
 }
 
 .mgt-bike {
@@ -219,10 +239,12 @@ body {
 }
 
 .infos {
+  width: 90%;
   height: 100px;
   padding: 1px 0;
   position: relative;
   background-color: #f0eee3;
+  color: #393939;
 }
 
 .ville {
@@ -298,10 +320,15 @@ body {
   background-color: #02585d;
 }
 
+.groupIcones {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 50px;
+}
+
 .icones {
-  display: inline-block;
-  margin-left: 132px;
-  margin-top: 55px;
+  display: flex;
 }
 
 .titre-ccm {
@@ -322,7 +349,7 @@ body {
 }
 
 .icones-ccm {
-  float left;
+  float: left;
 }
 
 .info-icon-ccm {
@@ -445,3 +472,446 @@ body {
   END ALL
   ==========================================================================
 */
+
+
+
+/* ==========================================================================
+   PAGE VELO
+   ========================================================================== */
+
+/* photopdt + map */
+
+.main .container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+#photopdt {
+  width: 60%;
+  height: 395px;
+  background-image: url(../img/photos/bike1.jpg);
+  background-size: 675px 395px;
+  display: flex;
+  flex-direction: column;
+}
+.nomSurnom {
+  height: 70px;
+  background-color: rgba(240, 238, 224, 0.8);
+  display: flex;
+  margin-top: 330px;
+}
+.bandeau {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #000;
+  padding-left: 10px;
+  line-height: 2.5em;
+}
+.nomVelo {
+  font-size: 2.5em;
+}
+.surnomVelo {
+  font-size: 1.5em;
+}
+
+/* end photopdt + map */
+
+
+
+/* proprio */
+
+#proprio {
+  width: 60%;
+  height: 100px;
+  background-color: #393939;
+  display: flex;
+  text-align: center;
+  align-items: center;
+}
+.perso {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.imgProfil {
+  margin-right: 10px;
+}
+.identity {
+  line-height: 2em;
+  padding-right: 10px;
+}
+.prenomNom {
+  font-size: 2em;
+}
+.timeAnswer {
+  font-size: 1.3em;
+}
+.stats {
+  width: 15%;
+  padding-right: 10px;
+}
+.note {
+  margin-top: 5px;
+}
+.stats p {
+  font-size: 1.5em;
+}
+
+/* end proprio */
+
+
+
+/* biopdt */
+
+#biopdt {
+  width: 60%;
+  height: 400px;
+  background-color: #005C5E;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+#biopdt h2 {
+  font-size: 1.6em;
+  margin-left: 10px;
+  line-height: 2em;
+  font-weight: bold;
+}
+#descriptif p {
+  font-size: 1.5em;
+  margin-left: 10px;
+}
+#accessoires {
+  display: flex;
+  justify-content: space-around;
+  font-size: 1.5em;
+  line-height: 2em;
+}
+#dispo h2 {
+  font-size: 1.6em;
+  margin-left: 10px;
+  line-height: 2em;
+  font-weight: bold;
+}
+#dispo p {
+  font-size: 1.5em;
+  margin-left: 10px;
+}
+
+/* fin biopdt */
+
+
+
+/* feedback */
+
+#feedback {
+  width: 60%;
+  height: 500px;
+  background-color: #393939;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+#feedback h2 {
+  font-size: 1.6em;
+  margin-left: 10px;
+  line-height: 2em;
+  font-weight: bold;
+}
+.imgText {
+  display: flex;
+  flex-direction: row;
+}
+.imgAvis {
+  margin-right: 20px;
+  margin-left: 15px;
+}
+.avis p {
+  font-size: 1.3em;
+  margin-top: 15px;
+}
+.nomDate {
+  display: flex;
+  flex-direction: row;
+  float: right;
+}
+.nomDate p {
+  margin-top: 0;
+  margin-right: 15px;
+  line-height: 2.4em;
+}
+.saumon {
+  color: #FF8872;
+}
+.vert {
+  color: #BAC54B;
+}
+.bleu {
+  color: #008983;
+}
+.nomDate .note {
+  margin-right: 20px;
+}
+
+/* fin feedback */
+
+/* ==========================================================================
+   END PAGE VELO
+   ========================================================================== */
+
+
+
+/* ==========================================================================
+   FOOTER
+   ========================================================================== */
+footer {
+  background-color: #393939;
+  height: 200px;
+  font-size: 1.1em;
+}
+footer .container {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 5em;
+}
+.plan h6 {
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-bottom: 1em;
+}
+.plan ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+.plan ul li a:hover {
+  text-decoration: underline;
+}
+.rsxScx {
+  display: flex;
+  flex-direction: row;
+}
+.fa-facebook, .fa-twitter, .fa-instagram {
+  margin-right: 1em;
+}
+
+/* ==========================================================================
+   END FOOTER
+   ========================================================================== */
+
+
+
+/* ==========================================================================
+  MODAL SIGN
+  ========================================================================== */
+
+.show-ele {
+ display: block;
+}
+
+.hide-ele {
+ display: none;
+}
+
+/* MODAL */
+
+#sign {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background-color: rgba(18, 18, 11, 0.5);
+  z-index: 2;
+
+  text-align: center;
+}
+
+#sign .close-sign {
+  width: 90%;
+  margin: auto;
+  text-align: right;
+}
+
+#sign .close-sign button {
+  border: none;
+  margin-top: 10px;
+  background-color: transparent;
+}
+
+#sign .close-sign span {
+  display: inline-block;
+  color: #393939;
+}
+
+#sign .window {
+  position: relative;
+  width: 40%;
+  height: auto;
+  margin: auto;
+  margin-top: 100px;
+  background-color: white;
+  z-index: 2;
+
+  text-align: center;
+  border-radius: 5px;
+}
+
+/* SIGN-IN PART */
+
+#sign-in .login, #sign-in .option-sign {
+  width: 90%;
+  margin: auto;
+}
+
+#sign-in .login input {
+  display: inline-block;
+  width: 100%;
+  height: 40px;
+  margin: auto;
+  margin-bottom: 10px;
+}
+
+#sign-in .login input:nth-child(1) {
+    margin-top: 20px;
+}
+
+/* OPTION SIGN-IN */
+
+.text-left {
+  text-align: left;
+}
+
+.text-right{
+  text-align: right;
+}
+
+#sign-in .option-sign {
+}
+
+#sign-in .option-sign .text-left, #sign-in .option-sign .text-right {
+  width: 49%;
+  display: inline-block;
+  height: 30px;
+}
+
+#sign-in .option-sign label {
+  height: auto;
+  display: inline-block;
+}
+
+#sign-in .option-sign input {
+  width: auto;
+  height: auto;
+  display: inline-block;
+}
+
+#sign-in .option-sign a {
+  color: red;
+  display: inline-block;
+}
+
+/* SUBMIT */
+
+
+#sign-in button {
+  display: inline-block;
+  width: 90%;
+  height: 40px;
+  margin: auto;
+  margin-bottom: 10px;
+
+  color: white;
+  background-color: #009E99;
+}
+
+#sign hr {
+  width: 90%;
+  border: 1px solid #393939;
+}
+
+/* SIGN UP INFO */
+
+#sign-up-info {
+  width: 90%;
+  margin: auto;
+  margin-bottom: 10px;
+  min-height: 60px;
+}
+
+#sign-up-info .text-left, #sign-up-info .text-right {
+  width: 49%;
+  display: inline-block;
+  height: 30px;
+}
+
+#sign-up-info button {
+  display: inline-block;
+  width: 90%;
+  height: 40px;
+  margin: auto;
+  margin-bottom: 30px;
+
+  color: white;
+  background-color: #009E99;
+}
+
+/* SIGN UP PART */
+
+#sign-up #signup-form {
+  width: 90%;
+  margin: auto;
+}
+
+#sign-up input {
+  display: inline-block;
+  width: 100%;
+  height: 40px;
+  margin: auto;
+  margin-bottom: 10px;
+}
+
+#sign-up input:nth-child(1) {
+    margin-top: 20px;
+}
+
+#sign-up button {
+  width: 100%;
+  height: 40px;
+  margin: auto;
+  margin-bottom: 10px;
+
+  color: white;
+  background-color: #009E99;
+}
+
+/* SIGN IN INFO */
+
+#sign-in-info {
+  width: 90%;
+  margin: auto;
+  margin-bottom: 10px;
+  min-height: 60px;
+}
+
+#sign-in-info .text-left, #sign-in-info .text-right {
+  width: 49%;
+  display: inline-block;
+  height: 30px;
+}
+
+#sign-in-info button {
+  display: inline-block;
+  width: 90%;
+  height: 40px;
+  margin: auto;
+  margin-bottom: 30px;
+
+  color: white;
+  background-color: #009E99;
+}
+
+/* ==========================================================================
+  END MODAL SIGN
+  ========================================================================== */
