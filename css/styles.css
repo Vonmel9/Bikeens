@@ -36,17 +36,11 @@ html {
 }
 
 body {
-<<<<<<< HEAD
-  min-width            : 100%;
-  background-color : #fff;
-  font-size        : 62.5%;
-=======
   background-color: #fff;
   width: 100%;
   font-size: 62.5%;
   color: #fff;
   font-family: Arial;
->>>>>>> master
 }
 
 .container {
@@ -89,7 +83,6 @@ body {
 }
 
 #navigation li {
-  font-family : 'Comfortaa Regular';
   font-size   : 16px;
 }
 
@@ -394,24 +387,20 @@ body {
 }
 
 .article-blog {
-  width: 557px;
+  width: 50%;
   float: left;
   margin-bottom: 35px;
 }
 
-.mgl-blog {
-  margin-left: 30px;
-}
-
 .left {
-  width: 279px;
+  width: 50%;
   height: 225px;
   float: left;
   position: relative;
 }
 
 .right {
-  width: 278px;
+  width: 50%;
   height: 225px;
   float: right;
   background-color: #ebe8d6;
@@ -426,7 +415,7 @@ body {
 }
 
 .article-blog-texte {
-  font-size: 1.4em;
+  font-size: 1.2em;
   color: #534741;
   margin-top: 20px;
   text-align: center;
@@ -675,6 +664,9 @@ footer .container {
   display: flex;
   justify-content: space-between;
   padding-top: 5em;
+}
+.plan {
+  line-height: 1.5em;
 }
 .plan h6 {
   font-size: 1.2em;
