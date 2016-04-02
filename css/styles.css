@@ -84,6 +84,10 @@ body {
 
 #navigation li {
   font-size   : 16px;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 #navigation a {
@@ -91,9 +95,41 @@ body {
   text-decoration : none;
 }
 
+.account {
+  display: flex;
+  flex-direction: row !important;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+}
+
+#navigation img {
+  width: 40px;
+  height: auto;
+}
+
+#navigation .profil {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+
+#navigation button {
+  margin: 0;
+}
+
 #nav {
   width      : 50%;
-  margin-top : 40px;
+  /*margin-top : 40px;*/
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#deconnecter {
+  border: none;
+  background: transparent;
+  font-size   : 16px;
 }
 
 #louer {
@@ -104,8 +140,9 @@ body {
   border: none;
   border-radius    : 8px;
   background-color : #0e9898;
-  line-height      : 43px;
+  /*line-height      : 43px;*/
   cursor: pointer;
+  font-size   : 16px;
 }
 
 /*
@@ -899,6 +936,10 @@ footer .container {
 
     color: white;
     background-color: #009E99;
+  }
+
+  #sign-up p {
+    margin-bottom: 10px;
   }
 
   /* SIGN IN INFO */

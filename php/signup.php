@@ -17,6 +17,7 @@ if(!isset($_SESSION['login']))
     {
       $_SESSION['login'] = $pseudo;
     }
+  }
 }
 else echo "Erreur.<br>Inscription impossible : vous êtes déjà logué avec un compte.";
 

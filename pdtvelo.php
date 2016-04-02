@@ -1,3 +1,7 @@
+<?php
+session_start();
+?>
+
 <!DOCTYPE html>
 <html>
 
@@ -22,14 +26,44 @@
         <div>
           <img id="logo" src="img/logo.png" alt="logo" />
         </div>
-        <div id="nav">
-          <ul id="navigation">
-            <li><a href="#">Comment ça marche?</a></li>
-            <li><a href="#">Inscription</a></li>
-            <li><a href="#">Connexion</a></li>
-            <li id="louer"><a href="#">Louer votre vélo</a></li>
-          </ul>
-        </div>
+
+      <div id="nav">
+        <ul id="navigation">
+          <li><a href="#">Comment ça marche?</a></li>
+          <?php
+            if(!isset($_SESSION['login']))
+            {
+          ?>
+            <li><a id="inscription" href="#">Inscription</a></li>
+            <li><a id="connexion" href="#">Connexion</a></li>
+          <?php
+            }
+            else
+                {
+          ?>
+                  <li>
+                    <a href="#" class="account">
+                      <div class="profil">
+                        <img src="img/icones/user.png" alt="" />
+                      </div>
+                      <div class="profil">
+                          <?php echo $_SESSION['login']; ?>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <form class="" action="index.php?logoff" method="post">
+                      <input type="hidden" name="deco" value="now">
+                      <button id="deconnecter" type="submit" name="logoff">Se déconnecter</button>
+                    </form>
+                  </li>
+          <?php
+                }
+          ?>
+
+          <li><button id="louer" type="submit" name="louer">Louer votre vélo</button></li>
+        </ul>
+      </div>
       </nav>
       <!-- fin menu -->
     </div>
