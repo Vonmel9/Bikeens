@@ -33,7 +33,9 @@ session_start();
       <!-- menu -->
       <nav id="menu">
         <div>
-          <img id="logo" src="img/logo.png" alt="logo" />
+          <a href="index.php">
+            <img id="logo" src="img/logo.png" alt="logo" />
+          </a>
         </div>
 
       <div id="nav">
