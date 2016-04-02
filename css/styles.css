@@ -73,26 +73,71 @@ body {
   /* margin-left : 106px; */
 }
 #navigation li {
-  font-size: 16px;
+  font-size   : 16px;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
+
 #navigation a {
   color: #000;
   text-decoration: none;
 }
-#nav {
+
+/*#nav {
   width: 50%;
   margin-top: 40px;
+}*/
+
+.account {
+  display: flex;
+  flex-direction: row !important;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
 }
+
+#navigation img {
+  width: 40px;
+  height: auto;
+}
+
+#navigation .profil {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+
+#navigation button {
+  margin: 0;
+}
+
+#nav {
+  width      : 50%;
+  /*margin-top : 40px;*/
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#deconnecter {
+  border: none;
+  background: transparent;
+  font-size   : 16px;
+}
+
 #louer {
   height: 43px;
   margin-top: -10px;
   padding: 0 10px 0 10px;
   color: #fff;
   border: none;
-  border-radius: 8px;
-  background-color: #0e9898;
-  line-height: 43px;
+  border-radius    : 8px;
+  background-color : #0e9898;
+  /*line-height      : 43px;*/
   cursor: pointer;
+  font-size   : 16px;
 }
 #louer a {
   color: #fff;
@@ -915,6 +960,12 @@ footer .container {
 }
 
 /* OPTION SIGN-IN */
+
+#sign-up p {
+  margin-bottom: 10px;
+}
+
+/* SIGN IN INFO */
 
 .text-left {
   text-align: left;

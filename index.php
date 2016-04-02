@@ -1,3 +1,16 @@
+<?php
+session_start();
+
+if(isset($_SESSION['login']))
+{
+    if(isset($_POST['logoff']) && isset($_POST['deco']))
+    {
+      session_destroy();
+    }
+}
+
+?>
+
 <!DOCTYPE html>
 <html>
 
@@ -20,14 +33,44 @@
       <!-- menu -->
       <nav id="menu">
         <div>
-          <img id="logo" src="img/logo.png" alt="logo" />
+          <a href="index.php">
+            <img id="logo" src="img/logo.png" alt="logo" />
+          </a>
         </div>
 
       <div id="nav">
         <ul id="navigation">
-          <li><a href="#principe">Comment ça marche?</a></li>
-          <li><a href="#">Inscription</a></li>
-          <li><a id="connexion" href="#">Connexion</a></li>
+          <li><a href="#">Comment ça marche?</a></li>
+          <?php
+            if(!isset($_SESSION['login']))
+            {
+          ?>
+            <li><a id="inscription" href="#">Inscription</a></li>
+            <li><a id="connexion" href="#">Connexion</a></li>
+          <?php
+            }
+            else
+                {
+          ?>
+                  <li>
+                    <a href="#" class="account">
+                      <div class="profil">
+                        <img src="img/icones/user.png" alt="" />
+                      </div>
+                      <div class="profil">
+                          <?php echo $_SESSION['login']; ?>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <form class="" action="index.php?logoff" method="post">
+                      <input type="hidden" name="deco" value="now">
+                      <button id="deconnecter" type="submit" name="logoff">Se déconnecter</button>
+                    </form>
+                  </li>
+          <?php
+                }
+          ?>
           <li><button id="louer" type="submit" name="louer">Louer votre vélo</button></li>
         </ul>
       </div>
@@ -53,7 +96,7 @@
       <!-- container -->
       <div class="container">
         <!-- form search -->
-        <form class="" action="pdtvelo.html" method="post">
+        <form class="" action="pdtvelo.php" method="post">
           <input class="champ-recherche" type="text" name="ouchercher" value="" placeholder="Où voulez-vous louer?">
           <select class="debut" name="">
             <option value="Début" selected>Début</option>
@@ -86,7 +129,7 @@
 
       <div class="bike-contain mgt-bike">
         <article class="bike-hover">
-          <a href="pdtvelo.html"><img class="bike" src="img/img-location-velo/velo1.jpg" alt="" /></a>
+          <a href="pdtvelo.php"><img class="bike" src="img/img-location-velo/velo1.jpg" alt="" /></a>
           <div class="infos">
             <p class="ville">Montpellier</p>
             <p class="categorie">TANDEM VILLE</p>
@@ -101,7 +144,7 @@
         </article>
 
         <article class="bike-hover">
-          <a href="#"><img class="bike" src="img/img-location-velo/velo2.jpg" alt="" /></a>
+          <a href="pdtvelo.php"><img class="bike" src="img/img-location-velo/velo2.jpg" alt="" /></a>
           <div class="infos">
             <p class="ville">Montpellier</p>
             <p class="categorie">Vélo du marié</p>
@@ -115,7 +158,7 @@
         </article>
 
         <article>
-          <a href="pdtvelo.html"><img class="bike" src="img/img-location-velo/velo3.jpg" alt="" /></a>
+          <a href="pdtvelo.php"><img class="bike" src="img/img-location-velo/velo3.jpg" alt="" /></a>
           <div class="infos">
             <p class="ville">Montpellier</p>
             <p class="categorie">vélo bois</p>
@@ -131,7 +174,7 @@
       </div>
       <div class="bike-contain">
         <article>
-          <a href="pdtvelo.html"><img class="bike" src="img/img-location-velo/velo4.jpg" alt="" /></a>
+          <a href="pdtvelo.php"><img class="bike" src="img/img-location-velo/velo4.jpg" alt="" /></a>
           <div class="infos">
             <p class="ville">Montpellier</p>
             <p class="categorie">V&Egrave;LO FEMME PEUGEOT</p>
@@ -147,7 +190,7 @@
         <!-- fin produit -->
 
         <article>
-          <a href="pdtvelo.html"><img class="bike" src="img/img-location-velo/velo5.jpg" alt="" /></a>
+          <a href="pdtvelo.php"><img class="bike" src="img/img-location-velo/velo5.jpg" alt="" /></a>
           <div class="infos">
             <p class="ville">Montpellier</p>
             <p class="categorie">fixies mixte purfix</p>
@@ -163,7 +206,7 @@
         <!-- fin produit -->
 
         <article>
-          <a href="pdtvelo.html"><img class="bike" src="img/img-location-velo/velo6.jpg" alt="" /></a>
+          <a href="pdtvelo.php"><img class="bike" src="img/img-location-velo/velo6.jpg" alt="" /></a>
           <div class="infos">
             <p class="ville">Montpellier</p>
             <p class="categorie">Vélo de course homme rapido</p>
@@ -231,7 +274,7 @@
         </ul>
       </article>
 
-      <button class="ccm-inscription material" type="button" name="button">S'inscrire</button>
+      <button id="inscription2" class="ccm-inscription material" type="button" name="button">S'inscrire</button>
     </div>
     <!-- fin container -->
   </section>

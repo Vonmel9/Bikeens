@@ -8,7 +8,13 @@ if(!isset($_SESSION['login']))
   {
     $pseudo = htmlentities($_POST['pseudo']);
     $password = htmlentities($_POST['password']);
-    if(isValidPseudo($pseudo) && isValidPassword($password))
+    // if(isValidPseudo($pseudo) && isValidPassword($password))
+    // {
+    //   $_SESSION['login'] = $pseudo;
+    // }
+
+    // For test, disable password verification
+    if(isValidPseudo($pseudo))
     {
       $_SESSION['login'] = $pseudo;
     }

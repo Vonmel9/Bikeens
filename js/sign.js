@@ -1,13 +1,19 @@
-$("#connexion, #sign, #close").on("click", function(event)
+$("#connexion, #inscription, #sign, #close, #inscription2").on("click", function(event)
 {
   var ele = event.target.id;
 
-  if (ele == "sign" || ele == "connexion" || ele == "close")
+  if (ele == "sign" || ele == "connexion" || ele == "inscription" || ele == "close" || ele == "inscription2")
   {
     if(ele == "connexion")
     {
       modalSignIn();
     }
+
+    if(ele == "inscription" || ele == "inscription2")
+    {
+      modalSignUp();
+    }
+
     toogleSign();
   }
 });
@@ -30,7 +36,6 @@ function toogleSign()
 $("#sign").on("click", "#subcribe", function(event)
 {
   modalSignUp();
-  addListenerForm();
 });
 
 $("#sign").on("click", "#logon", function(event)
@@ -47,7 +52,7 @@ function modalSignIn()
     '<div id="sign-in">'+
     '<form id="signin-form" action="php/signin.php" method="post">'+
       '<div class="login">'+
-        '<input type="text" name="email" value="" placeholder=" Votre adresse email">'+
+        '<input type="text" name="pseudo" value="" placeholder=" Votre pseudo">'+
         '<input type="password" name="password" value="" placeholder=" Votre mot de passe">'+
       '</div>'+
       '<div class="option-sign">'+
@@ -116,7 +121,7 @@ function modalSignUp()
       '</form>'+
     '</div>'+
     '<div class="form-error">'+
-      'Une erreur au niveau du formulaire'+
+      'Formulaire incomplet'+
     '</div>'+
     '<div class="sign-error">'+
       'Problème lors de la création du compte'+
@@ -131,6 +136,8 @@ function modalSignUp()
       '</div>'+
     '</div>'
   );
+
+  addListenerForm();
 }
 
 
@@ -316,6 +323,7 @@ $('#sign').on('submit', '#sign-up', function(e)
   $.post($form.attr("action"), $form.serialize())
   .done(function(data)
   {
+    alert(data);
     if(data.search('Erreur') == -1)
     {
       $("#sign .sign-error").removeClass("error");
