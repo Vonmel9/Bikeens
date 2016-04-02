@@ -3,7 +3,7 @@
   PALETTE COULEURS --
   blanc : #FFF
   bleu(logo+text) : #009E99
-  jaune :#F2C100
+  jaune : #F2C100
   gris : #393939
   saumon : #FF8872
   vert : #BAC54B
@@ -106,6 +106,9 @@ body {
   background-color : #0e9898;
   line-height      : 43px;
   cursor           : pointer;
+}
+#louer a {
+  color : #fff;
 }
 
 /*
@@ -611,12 +614,22 @@ body {
 }
 
 .note {
-  float      : right;
-  margin-top : 5px;
+  margin-top: 5px;
 }
 
 .stats p {
   font-size : 1.5em;
+}
+.reserver {
+  margin-left: 103px;
+}
+.btnResa {
+  float: right;
+  width: 35%;
+  height: 60px;
+  background-color: #F2C100;
+  border-radius: 10px;
+  border: 0;
 }
 
 /* end proprio */
@@ -624,20 +637,21 @@ body {
 /* biopdt */
 
 #biopdt {
-  display          : flex;
-  width            : 60%;
-  height           : 400px;
-  margin-top       : 1px;
-  background-color : #005C5E;
-  flex-direction   : column;
-  justify-content  : space-around;
+  width: 60%;
+  height: 450px;
+  background-color: #005C5E;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-top: 1px;
 }
 
 #biopdt h2 {
-  margin-left : 10px;
-  font-size   : 1.6em;
-  font-weight : bold;
-  line-height : 2em;
+  font-size: 1.6em;
+  margin-left: 10px;
+  line-height: 2em;
+  font-weight: bold;
+  padding-top: 10px;
 }
 
 #descriptif p {
@@ -652,6 +666,17 @@ body {
   line-height     : 2em;
 }
 
+.no {
+  font-style: italic;
+  color: #DEDEDE;
+}
+.yes {
+  font-weight: bold;
+}
+#dispo {
+  padding-bottom: 20px;
+}
+
 #dispo h2 {
   margin-left : 10px;
   font-size   : 1.6em;
@@ -663,19 +688,25 @@ body {
   margin-left : 10px;
   font-size   : 1.5em;
 }
+.hr {
+  width: 50%;
+  margin: auto;
+  height: 1px;
+  background-color: #fff;
+}
 
 /* fin biopdt */
 
 /* feedback */
 
 #feedback {
-  display          : flex;
-  width            : 100  %;
-  height           : auto;
-  margin-top       : 1px;
-  background-color : #393939;
-  flex-direction   : column;
-  justify-content  : space-around;
+  width: 60%;
+  height: 500px;
+  background-color: #393939;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-top: 1px;
 }
 
 #feedback h2 {
@@ -705,7 +736,6 @@ body {
   float          : right;
   flex-direction : row;
 }
-
 .nomDate p {
   margin-top   : 0;
   margin-right : 15px;
@@ -725,8 +755,7 @@ body {
 }
 
 .nomDate .note {
-  float        : right;
-  margin-right : 20px;
+  margin-right: 20px;
 }
 
 /* fin feedback */
