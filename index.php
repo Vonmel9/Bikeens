@@ -40,7 +40,7 @@ if(isset($_SESSION['login']))
 
       <div id="nav">
         <ul id="navigation">
-          <li><a href="#">Comment ça marche?</a></li>
+          <li><a href="#principe">Comment ça marche?</a></li>
           <?php
             if(!isset($_SESSION['login']))
             {

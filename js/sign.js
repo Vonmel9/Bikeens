@@ -1,10 +1,11 @@
-$("#connexion, #inscription, #sign, #close, #inscription2").on("click", function(event)
+$("#connexion, #inscription, #sign, #close, #inscription2, #reserver").on("click", function(event)
 {
   var ele = event.target.id;
 
-  if (ele == "sign" || ele == "connexion" || ele == "inscription" || ele == "close" || ele == "inscription2")
+
+  if (ele == "sign" || ele == "connexion" || ele == "inscription" || ele == "close" || ele == "inscription2" || ele == "reserver")
   {
-    if(ele == "connexion")
+    if(ele == "connexion" || ele == "reserver")
     {
       modalSignIn();
     }

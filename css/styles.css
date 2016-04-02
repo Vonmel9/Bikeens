@@ -888,6 +888,7 @@ footer .container {
 
 /* MODAL */
 
+
 #sign {
   position: fixed;
   width: 100vw;
@@ -898,6 +899,12 @@ footer .container {
   z-index: 2;
   text-align: center;
 }
+
+#sign button {
+  border: none;
+  border-radius: 10px;
+}
+
 #sign .close-sign {
   position: absolute;
   top: -10px;
@@ -951,6 +958,16 @@ footer .container {
   margin: auto;
   margin-bottom: 10px;
 }
+
+#signin-form button {
+  width: 90%;
+  height: 40px;
+  margin: auto;
+  margin-bottom: 30px;
+  color: white;
+  background-color: #009E99;
+}
+
 #sign-in .login input:nth-child(1) {
   margin-top: 20px;
 }

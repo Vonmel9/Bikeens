@@ -1,5 +1,14 @@
 <?php
 session_start();
+
+if(isset($_SESSION['login']))
+{
+    if(isset($_POST['logoff']) && isset($_POST['deco']))
+    {
+      session_destroy();
+    }
+}
+
 ?>
 
 <!DOCTYPE html>
@@ -31,7 +40,7 @@ session_start();
 
       <div id="nav">
         <ul id="navigation">
-          <li><a href="#">Comment ça marche?</a></li>
+          <li><a href="index.php#principe">Comment ça marche?</a></li>
           <?php
             if(!isset($_SESSION['login']))
             {
@@ -144,7 +153,7 @@ session_start();
 
     <aside class="reserver">
       <!-- bouton resa -->
-      <button class="btnResa">
+      <button id="reserver" class="btnResa">
         Réserver ce vélo
       </button>
     </aside>
@@ -407,7 +416,47 @@ session_start();
   </footer>
   <!-- fin footer -->
 
+  <div id="sign" class="hide-ele">
+    <div class="window">
+      <div class="close-sign">
+        <button id="close"><span class="fa fa-times fa-2x"></span></button>
+      </div>
+      <div id="sign-in">
+        <form id="signin-form" action="php/signin.php" method="post">
+          <div class="login">
+            <input type="text" name="pseudo" value="" placeholder=" Votre pseudo">
+            <input type="password" name="password" value="" placeholder=" Votre mot de passe">
+          </div>
+          <div class="option-sign">
+            <div class="text-left">
+              <label><input type="checkbox" name="remember" value="remember">Se souvenir de moi</label>
+            </div>
+            <div class="text-right">
+              <a href="#">Mot de passe oublié ?</a>
+            </div>
+          </div>
+          <button id="submit" type="submit" autocomplete="off">Se connecter</button>
+        </form>
+      </div>
+      <div class="sign-error">
+        Problème d'authentification côté serveur
+      </div>
+      <hr>
+      <div id="sign-up-info">
+        <div class="text-left">
+          <p>Vous n'avez pas de compte?</p>
+        </div>
+        <div class="text-right">
+          <button id="subcribe" type="button" name="button">Inscription</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+<script src="js/function.js"></script>
+<script src="js/sign.js"></script>
+<script src="material.js"></script>
 </body>
 
 </html>
