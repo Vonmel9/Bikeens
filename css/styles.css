@@ -11,30 +11,25 @@
   ==========================================================================
 */
 
+
 /*
   ==========================================================================
   ALL
   ==========================================================================
 */
 
-body,
+body, html {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
 html {
-  width   : 100%;
-  height  : 100%;
-  margin  : 0;
-  padding : 0;
+  box-sizing: border-box;
 }
-
-html {
-  box-sizing : border-box;
+*, *::after, *::before {
+  box-sizing: inherit;
 }
-
-*,
-*::after,
-*::before {
-  box-sizing : inherit;
-}
-
 body {
   background-color: #fff;
   width: 100%;
@@ -42,14 +37,12 @@ body {
   color: #fff;
   font-family: Arial;
 }
-
 .container {
-  width  : 80%;
-  margin : auto;
-    /* background-color : red; */
-    /* a changer */
+  width: 80%;
+  margin: auto;
+  /* background-color : red; */
+  /* a changer */
 }
-
 .main {
   width: 80%;
   margin: auto;
@@ -62,53 +55,47 @@ body {
 */
 
 #menu {
-  display          : flex;
-  width            : auto;
-  height           : 101px;
-  background-color : rgb(255, 255, 255);
-  justify-content  : space-between;
+  display: flex;
+  width: auto;
+  height: 101px;
+  background-color: rgb(255, 255, 255);
+  justify-content: space-between;
 }
-
 #logo {
-  margin-top     : 10px;
-  vertical-align : middle;
+  margin-top: 10px;
+  vertical-align: middle;
 }
-
 #navigation {
-  display         : flex;
-  width           : 100%;
-  vertical-align  : middle;
-  justify-content : space-between;
-    /* margin-left : 106px; */
+  display: flex;
+  width: 100%;
+  vertical-align: middle;
+  justify-content: space-between;
+  /* margin-left : 106px; */
 }
-
 #navigation li {
-  font-size   : 16px;
+  font-size: 16px;
 }
-
 #navigation a {
-  color           : #000;
-  text-decoration : none;
+  color: #000;
+  text-decoration: none;
 }
-
 #nav {
-  width      : 50%;
-  margin-top : 40px;
+  width: 50%;
+  margin-top: 40px;
 }
-
 #louer {
-  height           : 43px;
-  margin-top       : -10px;
-  padding          : 0 10px 0 10px;
-  color            : #fff;
+  height: 43px;
+  margin-top: -10px;
+  padding: 0 10px 0 10px;
+  color: #fff;
   border: none;
-  border-radius    : 8px;
-  background-color : #0e9898;
-  line-height      : 43px;
+  border-radius: 8px;
+  background-color: #0e9898;
+  line-height: 43px;
   cursor: pointer;
 }
 #louer a {
-  color : #fff;
+  color: #fff;
 }
 
 /*
@@ -117,31 +104,30 @@ body {
   ==========================================================================
 */
 
+
 /* * L'ID Slide représente le bloc container du slide (l'image avec le vélo). */
 
 #slide {
-  width           : 100%;
-  height          : 429px;
-  overflow        : hidden;
-  background      : url(../img/navigation/bg-header.jpg) no-repeat center;
-  background-size : cover;
+  width: 100%;
+  height: 429px;
+  overflow: hidden;
+  background: url(../img/navigation/bg-header.jpg) no-repeat center;
+  background-size: cover;
 }
 
 /* * La classe slide--titre représente le titre h2 du slide, "Vivez l'expérience" */
 
 .slide--titre {
-  font-size : 5em;
+  font-size: 5em;
 }
 
 /* * la classe sous-titre représente le paragraphe sous le titre du slide */
 
 .slide-sous-titre {
-  font-size : 3em;
+  font-size: 3em;
 }
-
-.slide-sous-titre,
-.slide--titre {
-  text-align : center;
+.slide-sous-titre, .slide--titre {
+  text-align: center;
 }
 
 /*
@@ -150,40 +136,35 @@ body {
 */
 
 .container-titre {
-  width            : 70%;
-  margin           : 110px auto;
-  color            : #fff;
-  background-color : rgba(0, 0, 0, 0.6);
+  width: 70%;
+  margin: 110px auto;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.6);
   padding-top: 60px;
   padding-bottom: 70px;
 }
-
 #search {
-  height           : 100px;
-  background-color : #363636;
+  height: 100px;
+  background-color: #363636;
 }
-
-.champ-recherche,
-.debut,
-.fin {
-  width            : 21%;
-  height           : 40px;
-  margin-top       : 30px;
-  margin-left      : 27px;
-  color            : white;
-  border           : 2px solid white;
-  border-radius    : 5px;
-  background-color : #363636;
+.champ-recherche, .debut, .fin {
+  width: 21%;
+  height: 40px;
+  margin-top: 30px;
+  margin-left: 27px;
+  color: white;
+  border: 2px solid white;
+  border-radius: 5px;
+  background-color: #363636;
 }
-
 .btn-search {
-  width            : 263px;
-  height           : 40px;
-  margin-left      : 27px;
-  color            : #000;
-  border           : none;
-  border-radius    : 10px;
-  background-color : #eabf07;
+  width: 263px;
+  height: 40px;
+  margin-left: 27px;
+  color: #000;
+  border: none;
+  border-radius: 10px;
+  background-color: #eabf07;
   cursor: pointer;
 }
 
@@ -194,50 +175,41 @@ body {
 */
 
 #resumBikes {
-  display : flex;
+  display: flex;
   flex-direction: row;
-
 }
-
 #resumBikes2 {
-  display : flex;
+  display: flex;
   flex-direction: row;
   height: 500px;
 }
-
 .bike-contain {
-  display         : flex;
-  position        : relative;
-  margin-top      : 30px;
-  justify-content : space-around;
+  display: flex;
+  position: relative;
+  margin-top: 30px;
+  justify-content: space-around;
 }
-
 .bike {
-  width : 90%;
+  width: 90%;
 }
-
 .bike-hover:hover {
   cursor: pointer;
 }
-
 .resumBikes-sous-titre {
-  margin-top : 17px;
-  text-align : center;
-  font-size  : 2em;
+  margin-top: 17px;
+  text-align: center;
+  font-size: 2em;
   color: #393939;
 }
-
 .resumBikes-titre {
-  margin-top : 70px;
-  color      : #0e9898;
-  text-align : center;
-  font-size  : 3em;
+  margin-top: 70px;
+  color: #0e9898;
+  text-align: center;
+  font-size: 3em;
 }
-
 .mgt-bike {
-  margin-top : 60px;
+  margin-top: 60px;
 }
-
 .infos {
   width: 90%;
   height: 100px;
@@ -246,28 +218,22 @@ body {
   background-color: #f0eee3;
   color: #393939;
 }
-
 .ville {
   font-size: 1.4em;
 }
-
 .categorie {
   font-size: 1.8em;
 }
-
 .tarif {
   font-size: 1.8em;
 }
-
 .tsem {
   font-size: .8em;
 }
-
 .ville, .categorie, .tarif {
   margin-left: 27px;
   margin-top: 10px;
 }
-
 .etoiles-contain {
   width: 72px;
   height: 16px;
@@ -276,18 +242,15 @@ body {
   margin-right: 30px;
   /*background-color: rgb(1, 195, 160);*/
 }
-
 .etoiles-infos {
   margin-left: 5px;
   display: inline-block;
 }
-
 .img-profil {
   position: absolute;
   bottom: 80%;
   right: 10%;
 }
-
 .btn-voir-velo-proxi {
   width: 363px;
   height: 43px;
@@ -300,12 +263,10 @@ body {
   cursor: pointer;
   font-size: 1.6em;
 }
-
 .fond-btn-voir-velo-proxi2 {
   background-color: #fff;
   height: 80px;
 }
-
 .btn-voir-velo-proxi2 {
   width: 363px;
   height: 43px;
@@ -317,7 +278,6 @@ body {
   cursor: pointer;
   font-size: 1.6em;
 }
-
 .kfk {
   margin-right: 70px;
   margin-top: 25px;
@@ -336,18 +296,15 @@ body {
   overflow: hidden;
   background-color: #02585d;
 }
-
 .groupIcones {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   margin-top: 50px;
 }
-
 .icones {
   display: flex;
 }
-
 .titre-ccm {
   font-size: 3.6em;
   text-align: center;
@@ -355,7 +312,6 @@ body {
   margin-bottom: 48px;
   color: #fff;
 }
-
 .para-ccm {
   width: 903px;
   margin: auto;
@@ -364,21 +320,17 @@ body {
   line-height: 30px;
   color: #fff;
 }
-
 .icones-ccm {
   float: left;
 }
-
 .info-icon-ccm {
   font-size: 1.8em;
   color: #eabf07;
   margin-top: 16px;
 }
-
 .icones-ccm, .info-icon-ccm {
   text-align: center;
 }
-
 .ccm-inscription {
   width: 205px;
   height: 43px;
@@ -402,34 +354,29 @@ body {
   display: flex;
   background-color: rgb(255, 255, 255);
 }
-
 .titre-blog {
   font-size: 3.6em;
   margin-bottom: 55px;
   text-align: center;
   color: #0e9898;
 }
-
 .article-blog {
   width: 50%;
   float: left;
   margin-bottom: 35px;
 }
-
 .left {
   width: 50%;
   height: 225px;
   float: left;
   position: relative;
 }
-
 .right {
   width: 50%;
   height: 225px;
   float: right;
   background-color: #ebe8d6;
 }
-
 .article-blog--titre {
   margin-top: 43px;
   font-size: 1.9em;
@@ -437,14 +384,12 @@ body {
   text-transform: uppercase;
   color: #534741;
 }
-
 .article-blog-texte {
   font-size: 1.2em;
   color: #534741;
   margin-top: 20px;
   text-align: center;
 }
-
 .blog-categorie {
   width: 160px;
   height: 46px;
@@ -454,18 +399,15 @@ body {
   line-height: 45px;
   color: white;
 }
-
 .btn-lire-suite {
   font-size: 1.6em;
   margin-top: 40px;
-  margin-left:  120px;
+  margin-left: 120px;
 }
-
 .btn-lire-suite a {
   color: #000;
   text-decoration: none;
 }
-
 .green {
   background-color: #bebf48;
 }
@@ -480,6 +422,51 @@ body {
   display: inline-block;
 }*/
 
+
+/* Temoignage page d'accueil */
+
+​ .avis-container {
+  float: left;
+  margin-top: 30px;
+  margin-left: 50px;
+}
+​ .titre-temoignage-home {
+  margin-top: 60px;
+  color: #0e9898;
+  text-align: center;
+  font-size: 3em !important;
+}
+​ .avis-home {
+  display: block;
+  width: 550px;
+}
+​ .text-temoignage-home {
+  width: 450px;
+  float: left;
+  margin-top: 7px;
+  margin-left: 20px;
+  font-size: 1.6em;
+}
+​ .imgAvisHome {
+  float: left;
+}
+​ .nomDateHome {
+  width: 600px;
+}
+​ .noteHome {
+  float: right;
+  margin-right: 50px;
+}
+​ .info-temoignage {
+  float: left;
+  margin-top: 5px;
+  margin-left: 20px;
+  font-size: 1.6em;
+}
+​
+/* Fin de temoignage page d'accueil */
+
+
 /*
   ==========================================================================
   END ALL
@@ -487,10 +474,10 @@ body {
 */
 
 
-
 /* ==========================================================================
    PAGE VELO
    ========================================================================== */
+
 
 /* photopdt + map */
 
@@ -529,7 +516,6 @@ body {
 }
 
 /* end photopdt + map */
-
 
 
 /* proprio */
@@ -584,7 +570,6 @@ body {
 }
 
 /* end proprio */
-
 
 
 /* biopdt */
@@ -645,9 +630,17 @@ body {
 /* fin biopdt */
 
 
-
 /* feedback */
 
+#feedbackHome {
+  display: flex;
+  width: 100%;
+  height: auto;
+  margin-top: 1px;
+  background-color: #393939;
+  flex-direction: column;
+  justify-content: space-around;
+}
 #feedback {
   width: 60%;
   height: 500px;
@@ -656,6 +649,12 @@ body {
   flex-direction: column;
   justify-content: space-around;
   margin-top: 1px;
+}
+#feedbackHome h2 {
+  font-size: 1.6em;
+  margin-left: 10px;
+  line-height: 2em;
+  font-weight: bold;
 }
 #feedback h2 {
   font-size: 1.6em;
@@ -700,15 +699,16 @@ body {
 
 /* fin feedback */
 
+
 /* ==========================================================================
    END PAGE VELO
    ========================================================================== */
 
 
-
 /* ==========================================================================
    FOOTER
    ========================================================================== */
+
 footer {
   background-color: #393939;
   height: 200px;
@@ -747,254 +747,216 @@ footer .container {
    ========================================================================== */
 
 
-
 /* ==========================================================================
   MODAL SIGN
   ========================================================================== */
 
-  .show-ele {
-   display: block;
-  }
+.show-ele {
+  display: block;
+}
+.hide-ele {
+  display: none;
+}
 
-  .hide-ele {
-   display: none;
-  }
+/* MODAL */
 
-  /* MODAL */
+#sign {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background-color: rgba(18, 18, 11, 0.5);
+  z-index: 2;
+  text-align: center;
+}
+#sign .close-sign {
+  position: absolute;
+  top: -10px;
+  right: 0;
+  width: auto;
+  height: auto;
+  text-align: right;
+}
+#sign .close-sign button {
+  border: none;
+  margin-top: 10px;
+  background-color: transparent;
+}
+#sign .close-sign span {
+  display: inline-block;
+  color: #393939;
+}
+#sign .window {
+  position: relative;
+  width: 40%;
+  height: auto;
+  margin: auto;
+  margin-top: 100px;
+  background-color: white;
+  z-index: 2;
+  text-align: center;
+  border-radius: 5px;
+}
+#sign p {
+  color: black;
+}
+#sign .sign-error {
+  color: red;
+  display: none;
+}
+#sign .form-error {
+  color: red;
+  display: none;
+}
 
-  #sign {
-    position: fixed;
-    width: 100vw;
-    height: 100vh;
-    top: 0;
-    left: 0;
-    background-color: rgba(18, 18, 11, 0.5);
-    z-index: 2;
+/* SIGN-IN PART */
 
-    text-align: center;
-  }
+#sign-in .login, #sign-in .option-sign {
+  width: 90%;
+  margin: auto;
+}
+#sign-in .login input {
+  display: inline-block;
+  width: 100%;
+  height: 40px;
+  margin: auto;
+  margin-bottom: 10px;
+}
+#sign-in .login input:nth-child(1) {
+  margin-top: 20px;
+}
+#sign-in label {
+  color: black;
+  font-weight: bold;
+}
 
-  #sign .close-sign {
-    position: absolute;
-    top: -10px;
-    right: 0;
-    width: auto;
-    height: auto;
-    text-align: right;
-  }
+/* OPTION SIGN-IN */
 
-  #sign .close-sign button {
-    border: none;
-    margin-top: 10px;
-    background-color: transparent;
-  }
+.text-left {
+  text-align: left;
+}
+.text-right {
+  text-align: right;
+}
+#sign-in .option-sign {}
+#sign-in .option-sign .text-left, #sign-in .option-sign .text-right {
+  width: 49%;
+  display: inline-block;
+  height: 30px;
+}
+#sign-in .option-sign label {
+  height: auto;
+  display: inline-block;
+}
+#sign-in .option-sign input {
+  width: auto;
+  height: auto;
+  display: inline-block;
+}
+#sign-in .option-sign a {
+  color: red;
+  display: inline-block;
+}
 
-  #sign .close-sign span {
-    display: inline-block;
-    color: #393939;
-  }
+/* SUBMIT */
 
-  #sign .window {
-    position: relative;
-    width: 40%;
-    height: auto;
-    margin: auto;
-    margin-top: 100px;
-    background-color: white;
-    z-index: 2;
+#sign-in button {
+  display: inline-block;
+  width: 90%;
+  height: 40px;
+  margin: auto;
+  margin-bottom: 10px;
+  color: white;
+  background-color: #009E99;
+}
+#sign hr {
+  width: 90%;
+  border: 1px solid #393939;
+}
 
-    text-align: center;
-    border-radius: 5px;
-  }
+/* SIGN UP INFO */
 
-  #sign p {
-    color: black;
-  }
+#sign-up-info {
+  width: 90%;
+  margin: auto;
+  margin-bottom: 10px;
+  min-height: 60px;
+}
+#sign-up-info .text-left, #sign-up-info .text-right {
+  width: 49%;
+  display: inline-block;
+  height: 30px;
+}
+#sign-up-info button {
+  display: inline-block;
+  width: 90%;
+  height: 40px;
+  margin: auto;
+  margin-bottom: 30px;
+  color: white;
+  background-color: #009E99;
+}
 
-  #sign .sign-error {
-    color: red;
-    display: none;
-  }
+/* SIGN UP PART */
 
-  #sign .form-error {
-    color: red;
-    display: none;
-  }
+#sign-up #signup-form {
+  width: 90%;
+  margin: auto;
+}
+#sign-up input {
+  display: inline-block;
+  width: 100%;
+  height: 40px;
+  margin: auto;
+  margin-bottom: 10px;
+}
+#sign-up input:nth-child(1) {
+  margin-top: 20px;
+}
+#sign-up button {
+  width: 100%;
+  height: 40px;
+  margin: auto;
+  margin-bottom: 10px;
+  color: white;
+  background-color: #009E99;
+}
 
-  /* SIGN-IN PART */
+/* SIGN IN INFO */
 
-  #sign-in .login, #sign-in .option-sign {
-    width: 90%;
-    margin: auto;
-  }
-
-  #sign-in .login input {
-    display: inline-block;
-    width: 100%;
-    height: 40px;
-    margin: auto;
-    margin-bottom: 10px;
-  }
-
-  #sign-in .login input:nth-child(1) {
-      margin-top: 20px;
-  }
-
-  #sign-in label {
-    color: black;
-    font-weight: bold;
-  }
-
-
-  /* OPTION SIGN-IN */
-
-  .text-left {
-    text-align: left;
-  }
-
-  .text-right{
-    text-align: right;
-  }
-
-  #sign-in .option-sign {
-  }
-
-  #sign-in .option-sign .text-left, #sign-in .option-sign .text-right {
-    width: 49%;
-    display: inline-block;
-    height: 30px;
-  }
-
-  #sign-in .option-sign label {
-    height: auto;
-    display: inline-block;
-  }
-
-  #sign-in .option-sign input {
-    width: auto;
-    height: auto;
-    display: inline-block;
-  }
-
-  #sign-in .option-sign a {
-    color: red;
-    display: inline-block;
-  }
-
-  /* SUBMIT */
-
-
-  #sign-in button {
-    display: inline-block;
-    width: 90%;
-    height: 40px;
-    margin: auto;
-    margin-bottom: 10px;
-
-    color: white;
-    background-color: #009E99;
-  }
-
-  #sign hr {
-    width: 90%;
-    border: 1px solid #393939;
-  }
-
-  /* SIGN UP INFO */
-
-  #sign-up-info {
-    width: 90%;
-    margin: auto;
-    margin-bottom: 10px;
-    min-height: 60px;
-  }
-
-  #sign-up-info .text-left, #sign-up-info .text-right {
-    width: 49%;
-    display: inline-block;
-    height: 30px;
-  }
-
-  #sign-up-info button {
-    display: inline-block;
-    width: 90%;
-    height: 40px;
-    margin: auto;
-    margin-bottom: 30px;
-
-    color: white;
-    background-color: #009E99;
-  }
-
-  /* SIGN UP PART */
-
-  #sign-up #signup-form {
-    width: 90%;
-    margin: auto;
-  }
-
-  #sign-up input {
-    display: inline-block;
-    width: 100%;
-    height: 40px;
-    margin: auto;
-    margin-bottom: 10px;
-  }
-
-  #sign-up input:nth-child(1) {
-      margin-top: 20px;
-  }
-
-  #sign-up button {
-    width: 100%;
-    height: 40px;
-    margin: auto;
-    margin-bottom: 10px;
-
-    color: white;
-    background-color: #009E99;
-  }
-
-  /* SIGN IN INFO */
-
-  #sign-in-info {
-    width: 90%;
-    margin: auto;
-    margin-bottom: 10px;
-    min-height: 60px;
-  }
-
-  #sign-in-info .text-left, #sign-in-info .text-right {
-    width: 49%;
-    display: inline-block;
-    height: 30px;
-  }
-
-  #sign-in-info button {
-    display: inline-block;
-    width: 90%;
-    height: 40px;
-    margin: auto;
-    margin-bottom: 30px;
-
-    color: white;
-    background-color: #009E99;
-  }
-
-  .pseudo-error, .name-error, .firstname-error {
-    display: none;
-    text-align: center;
-  }
-
-  .email-error, .password-error, .password2-error {
-    display: none;
-    text-align: center;
-  }
-
-  .error {
-    display: block !important;
-    color: #F15D2F !important;
-  }
+#sign-in-info {
+  width: 90%;
+  margin: auto;
+  margin-bottom: 10px;
+  min-height: 60px;
+}
+#sign-in-info .text-left, #sign-in-info .text-right {
+  width: 49%;
+  display: inline-block;
+  height: 30px;
+}
+#sign-in-info button {
+  display: inline-block;
+  width: 90%;
+  height: 40px;
+  margin: auto;
+  margin-bottom: 30px;
+  color: white;
+  background-color: #009E99;
+}
+.pseudo-error, .name-error, .firstname-error {
+  display: none;
+  text-align: center;
+}
+.email-error, .password-error, .password2-error {
+  display: none;
+  text-align: center;
+}
+.error {
+  display: block !important;
+  color: #F15D2F !important;
+}
 
 /* ==========================================================================
   END MODAL SIGN
